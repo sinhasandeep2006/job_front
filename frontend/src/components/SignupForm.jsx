@@ -26,7 +26,7 @@ function SignupForm() {
     data.append('resume', formData.resume);
 
     try {
-      await axios.post('/api/users', data);
+      await axios.post('https://job-back-3.onrender.com/api/users', data);
       navigate('/thank-you');
     } catch (error) {
       console.error(error);
